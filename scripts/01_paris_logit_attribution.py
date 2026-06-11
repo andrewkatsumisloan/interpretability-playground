@@ -65,7 +65,7 @@ top_df = df.head(25).iloc[::-1]
 plt.figure(figsize=(10, 8))
 plt.barh(top_df["component"], top_df["paris_logit_attr"])
 plt.xlabel("Direct contribution to ' Paris' logit")
-plt.title("GPT-2 small: components pushing toward ' Paris'")
+plt.title("GPT-2 medium: components pushing toward ' Paris'")
 plt.tight_layout()
 plt.savefig("outputs/paris_logit_attribution.png", dpi=200)
 
